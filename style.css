@@ -185,12 +185,14 @@
   /* زر التحميل */
   .download-btn {
     display: inline-block;
-    padding: 12px 30px;
+    padding: 10px 30px;
     background: #00ffc8;
     color: #0d0d0d;
     font-weight: bold;
     border-radius: 8px;
     transition: all 0.3s ease;
+    margin: 2.5cm;
+    
   }
   
   .download-btn:hover {
