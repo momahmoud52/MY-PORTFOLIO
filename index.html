@@ -11,7 +11,15 @@
   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 </head>
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<!-- في ملف index.html قبل </body> -->
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+  (function(){
+    emailjs.init("i_0Anw2UdLxOsVHZ4");
+  })();
+</script>
+<script src="script.js"></script>
+
 <body>
 
   <!-- شاشة التحميل -->
@@ -85,7 +93,6 @@
   <script>
     AOS.init();
   </script>
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 </body>
 </html>
