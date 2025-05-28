@@ -38,30 +38,26 @@
   
   .loader-logo {
     width: 120px;
+    height: 120px;
     margin-bottom: 30px;
-    animation: spin 3s linear infinite;
-  }
-  
-  @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+    border-radius: 50%;
+    object-fit: cover;
   }
   
   .shapes {
     display: flex;
     gap: 12px;
-    animation: rotateShapes 6s linear infinite;
-  }
-  
-  @keyframes rotateShapes {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
   }
   
   .shapes div {
     width: 20px;
     height: 20px;
-    animation: bounce 1s infinite alternate;
+    animation: blink 1.2s infinite ease-in-out alternate;
+  }
+  
+  @keyframes blink {
+    0% { opacity: 0.2; transform: scale(0.8); }
+    100% { opacity: 1; transform: scale(1); }
   }
   
   .circle {
@@ -79,12 +75,6 @@
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
     border-bottom: 20px solid #3caaff;
-  }
-  
-  @keyframes bounce {
-    to {
-      transform: translateY(-15px);
-    }
   }
   
   /* قسم البطل */
@@ -138,12 +128,8 @@
   }
   
   @keyframes float {
-    0%, 100% {
-      transform: translateY(0px);
-    }
-    50% {
-      transform: translateY(10px);
-    }
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(10px); }
   }
   
   @keyframes fadeIn {
@@ -319,12 +305,13 @@
     }
   
     .my-name {
-      font-size: 1.5rem;
+      font-size: 1.4rem;
     }
   
-    .main-profile {
-      width: 140px;
-      height: 140px;
+    .main-profile,
+    .loader-logo {
+      width: 120px;
+      height: 120px;
     }
   }
   
