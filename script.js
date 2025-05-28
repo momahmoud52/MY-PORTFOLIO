@@ -10,7 +10,7 @@ window.addEventListener('load', () => {
     setTimeout(() => {
       loader.style.display = 'none';
     }, 800);
-  }, 2000); // بعد 10 ثوانٍ
+  }, 6000); // بعد 10 ثوانٍ
 });
 
 // تمرير سلس عند الضغط على السهم
