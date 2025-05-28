@@ -38,12 +38,24 @@
   
   .loader-logo {
     width: 120px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    animation: spin 3s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
   }
   
   .shapes {
     display: flex;
-    gap: 10px;
+    gap: 12px;
+    animation: rotateShapes 6s linear infinite;
+  }
+  
+  @keyframes rotateShapes {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
   }
   
   .shapes div {
@@ -99,9 +111,22 @@
     z-index: -1;
   }
   
-  .main-logo {
-    width: 160px;
+  .main-profile {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 4px solid #00ffc8;
+    box-shadow: 0 0 25px rgba(0, 255, 200, 0.5);
+    margin-bottom: 20px;
+    object-fit: cover;
     animation: fadeIn 2s ease-in;
+  }
+  
+  .my-name {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #00ffc8;
+    text-shadow: 0 0 10px #00ffc8;
   }
   
   .scroll-down {
@@ -192,7 +217,6 @@
     border-radius: 8px;
     transition: all 0.3s ease;
     margin: 2.5cm;
-    
   }
   
   .download-btn:hover {
@@ -292,6 +316,15 @@
   
     .download-btn {
       padding: 10px 20px;
+    }
+  
+    .my-name {
+      font-size: 1.5rem;
+    }
+  
+    .main-profile {
+      width: 140px;
+      height: 140px;
     }
   }
   

@@ -10,22 +10,19 @@
   <script defer src="script.js"></script>
   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script>
+    (function(){
+      emailjs.init("i_0Anw2UdLxOsVHZ4");
+    })();
+  </script>
 </head>
-<!-- في ملف index.html قبل </body> -->
-<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-<script>
-  (function(){
-    emailjs.init("i_0Anw2UdLxOsVHZ4");
-  })();
-</script>
-<script src="script.js"></script>
-
 <body>
 
   <!-- شاشة التحميل -->
   <div id="loader">
-    <img src="assets/logo.png" alt="شعاري" class="loader-logo">
-    <div class="shapes">
+    <img src="assets/logo.png" alt="شعار التحميل" class="loader-logo spinning">
+    <div class="shapes rotating">
       <div class="circle"></div>
       <div class="square"></div>
       <div class="triangle"></div>
@@ -35,7 +32,8 @@
   <!-- القسم الرئيسي -->
   <section class="hero">
     <div class="hero-content" data-aos="fade-up">
-      <img src="assets/logo.png" alt="شعاري" class="main-logo">
+      <img src="bb.jpg" alt="صورتي الشخصية" class="main-profile">
+      <h1 class="my-name">MOHAMED MAHMOUD EL-SHAHAT</h1>
       <div class="scroll-down">&#x25BC;</div>
     </div>
     <div class="animated-background"></div>
@@ -92,6 +90,12 @@
 
   <script>
     AOS.init();
+    // إخفاء شاشة التحميل بعد 10 ثوانٍ
+    window.addEventListener("load", () => {
+      setTimeout(() => {
+        document.getElementById("loader").style.display = "none";
+      }, 10000);
+    });
   </script>
 
 </body>
