@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>بورتفوليو احترافي</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+  <script defer src="script.js"></script>
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+</head>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<body>
+
+  <!-- شاشة التحميل -->
+  <div id="loader">
+    <img src="assets/logo.png" alt="شعاري" class="loader-logo">
+    <div class="shapes">
+      <div class="circle"></div>
+      <div class="square"></div>
+      <div class="triangle"></div>
+    </div>
+  </div>
+
+  <!-- القسم الرئيسي -->
+  <section class="hero">
+    <div class="hero-content" data-aos="fade-up">
+      <img src="assets/logo.png" alt="شعاري" class="main-logo">
+      <div class="scroll-down">&#x25BC;</div>
+    </div>
+    <div class="animated-background"></div>
+  </section>
+
+  <!-- نبذة عني -->
+  <section class="about" id="about">
+    <h2 data-aos="fade-up">نبذة عني</h2>
+    <p data-aos="fade-up" data-aos-delay="100">أنا مصمم جرافيكي محترف، أعمل على تحويل الأفكار إلى تصاميم بصرية إبداعية تلهم الجمهور وتحقق الأهداف.</p>
+  </section>
+
+  <!-- أعمالي -->
+  <section class="portfolio" id="portfolio">
+    <h2 data-aos="fade-up">أعمالي</h2>
+    <div class="projects" data-aos="zoom-in-up" data-aos-delay="200">
+      <div class="project-box"><img src="assets/projects/project1.jpg" alt="مشروع 1"></div>
+      <div class="project-box"><img src="assets/projects/project2.jpg" alt="مشروع 2"></div>
+      <div class="project-box"><img src="assets/projects/project3.jpg" alt="مشروع 3"></div>
+    </div>
+    <a href="assets/pdf/my-portfolio.pdf" download class="download-btn" data-aos="fade-up" data-aos-delay="300">📄 تحميل البورتفوليو PDF</a>
+  </section>
+
+  <!-- استشارات -->
+  <section class="contact" id="contact">
+    <h2 data-aos="fade-up">طلب استشارة</h2>
+    <form id="consultForm" data-aos="fade-up" data-aos-delay="100">
+      <input type="text" name="name" placeholder="الاسم الكامل" required>
+      <input type="email" name="email" placeholder="البريد الإلكتروني" required>
+      <textarea name="message" placeholder="اكتب رسالتك هنا..." required></textarea>
+      <button type="submit">إرسال</button>
+    </form>
+  </section>
+
+  <!-- عملاؤنا -->
+  <section class="clients" id="clients">
+    <h2 data-aos="fade-up">عملاؤنا</h2>
+    <div class="client-logos" data-aos="fade-up" data-aos-delay="100">
+      <img src="assets/clients/client1.png" alt="عميل 1">
+      <img src="assets/clients/client2.png" alt="عميل 2">
+      <img src="assets/clients/client3.png" alt="عميل 3">
+    </div>
+  </section>
+
+  <!-- تذييل -->
+  <footer>
+    <div class="social-links" data-aos="fade-up">
+      <a href="https://facebook.com" target="_blank">فيسبوك</a>
+      <a href="https://instagram.com" target="_blank">إنستغرام</a>
+      <a href="https://twitter.com" target="_blank">تويتر</a>
+      <a href="https://wa.me/1234567890" target="_blank">واتساب</a>
+    </div>
+    <p>© 2025 جميع الحقوق محفوظة</p>
+  </footer>
+
+  <script>
+    AOS.init();
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</body>
+</html>
